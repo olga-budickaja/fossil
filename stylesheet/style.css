@@ -7,9 +7,11 @@
 
 * {
   font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.5px;
 }
 
-.body {
+body {
   margin: 0;
   padding: 0;
   background: #000;
@@ -18,6 +20,47 @@
 .container {
   max-width: 975px;
   margin: 0 auto;
+}
+
+.header {
+  padding: 15px 0;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  width: 104px;
+}
+.header__img {
+  max-width: 100%;
+}
+.header__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__list:not(:last-child) {
+  margin-right: 40px;
+}
+.header__link {
+  color: #fff;
+  text-decoration: none;
+}
+.header__link:after {
+  content: "";
+  display: block;
+  background: #fff;
+  height: 1px;
+  width: 0;
+  transition: all 0.75s;
+}
+.header__link:hover:after {
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
