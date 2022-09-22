@@ -10,6 +10,7 @@
 * {
   font-family: 'PT Sans', sans-serif;
   font-size: 16px;
+  color: $text-color;
   letter-spacing: 1.5px;
 }
 
@@ -26,4 +27,5 @@ body {
 
 
 @import "bloks/header";
+@import "bloks/promo";
 @import "bloks/media";
