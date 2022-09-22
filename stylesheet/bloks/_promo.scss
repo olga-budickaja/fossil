@@ -4,17 +4,24 @@
   height: 100vh;
   &__description {
     position: absolute;
-    top: 50%;
+    top: calc(50% + 50px);
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
   }
   &__block {
+    position: relative;
     width: 320px;
     height: 320px;
     border: 5px solid $text-color;
     margin: 0 auto;
     padding: 0 60px;
+    &-description {
+      position: absolute;
+      top: calc(50% - 40px);
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   &__title {
     margin-bottom: 20px;

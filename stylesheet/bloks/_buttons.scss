@@ -6,6 +6,6 @@
   transition: background .5s;
   cursor: pointer;
   &:hover, &:focus {
-    background: rgba(255, 255, 255, .1);
+    background: $hover-color;
   }
 }
