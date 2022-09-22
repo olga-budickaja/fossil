@@ -1,0 +1,11 @@
+.btn {
+  background: transparent;
+  border: 2px solid $text-color;
+  padding: 10px 20px;
+  margin: 0 auto;
+  transition: background .5s;
+  cursor: pointer;
+  &:hover, &:focus {
+    background: rgba(255, 255, 255, .1);
+  }
+}

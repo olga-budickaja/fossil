@@ -19,8 +19,36 @@ body {
 }
 
 .container {
-  max-width: 975px;
+  max-width: 1440px;
   margin: 0 auto;
+}
+
+.hr {
+  margin-top: 20px;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  text-align: center;
+}
+.title_fsz36 {
+  font-size: 36px;
+}
+.title_fz18 {
+  font-size: 18px;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  margin: 0 auto;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+.btn:hover, .btn:focus {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .header {
@@ -84,8 +112,6 @@ body {
   padding: 0 60px;
 }
 .promo__title {
-  font-family: "Playfair Display", serif;
-  font-size: 64px;
   margin-bottom: 20px;
 }
 .promo__title:after {
@@ -99,6 +125,84 @@ body {
   margin-top: 80px;
 }
 
+.collection__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
+  align-items: center;
+}
+.collection__tabs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.collection__tab {
+  margin: 0 20px;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.collection__tab_active {
+  background: rgba(255, 255, 255, 0.1);
+}
+.collection__tab_active:hover, .collection__tab_active:focus {
+  background: rgba(255, 255, 255, 0.5);
+}
+.collection__tab:hover, .collection__tab:focus {
+  background: rgba(255, 255, 255, 0.1);
+}
+.collection__content {
+  margin-top: 60px;
+}
+.collection__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+.collection__item-img {
+  max-width: 100%;
+}
+.collection__item-title {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.collection__item-prices {
+  display: flex;
+}
+.collection__item-old {
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 20px;
+  text-decoration: line-through;
+}
+.collection__image {
+  position: relative;
+}
+.collection__image-description {
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.collection__image-title {
+  margin-bottom: 0;
+}
+.collection__img {
+  max-width: 100%;
+}
+.collection__btn {
+  margin-top: 25px;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: 1200px;
+  }
+}
 @media (max-width: 1200px) {
   .container {
     width: 960px;
