@@ -162,8 +162,16 @@ body {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
 }
+.collection__item-image {
+  height: 270px;
+  overflow: hidden;
+}
 .collection__item-img {
   max-width: 100%;
+  transition: transform 0.25s;
+}
+.collection__item-image:hover .collection__item-img {
+  transform: scale(1.3);
 }
 .collection__item-title {
   text-align: left;
