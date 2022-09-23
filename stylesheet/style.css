@@ -106,7 +106,7 @@ body {
 
 .promo {
   position: relative;
-  background: url("/img/bg-promo.jpg") no-repeat 50%/cover;
+  background: url("../img/bg-promo.jpg") no-repeat 50%/cover;
   height: 100vh;
 }
 .promo__description {
