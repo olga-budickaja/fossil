@@ -3,8 +3,10 @@
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 60px;
     align-items: center;
+  }
+  &__catalog {
+    padding: 0 60px;
   }
   &__tabs {
     list-style-type: none;
@@ -28,6 +30,9 @@
   }
   &__content {
     margin-top: 60px;
+  }
+  &__item-image {
+    height: 245px;
   }
   &__items {
     grid-template-columns: repeat(3, 1fr);

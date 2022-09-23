@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1109px;
   margin: 0 auto;
 }
 
@@ -37,4 +37,5 @@ body {
 @import "bloks/product-catalog";
 @import "bloks/collection";
 @import "bloks/presentation";
+@import "bloks/catalog";
 @import "bloks/media";
