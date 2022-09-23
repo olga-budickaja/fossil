@@ -97,8 +97,11 @@ body {
   padding: 12px 20px;
   transition: all 0.5s;
 }
-.header__cart:hover {
+.header__cart:hover, .header__login:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+.header__login {
+  padding: 15px 20px;
 }
 
 .promo {
@@ -276,6 +279,71 @@ body {
 }
 .brands__img {
   max-width: 100%;
+}
+
+.about__header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 100px;
+  align-items: center;
+}
+.about__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.about__item {
+  margin: 0 40px;
+}
+.about__item svg {
+  width: 15px;
+  height: 15px;
+  fill: #63593e;
+}
+.about__item:nth-child(2) svg {
+  width: 20px;
+  height: auto;
+}
+.about__link {
+  position: relative;
+  text-decoration: none;
+}
+.about__link span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.about__link span:nth-child(1) {
+  top: 60%;
+  left: -20px;
+}
+.about__social {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background: #63593e;
+  height: 100%;
+  padding-left: 60px;
+}
+.about__social svg {
+  width: 20px;
+  height: 20px;
+  fill: #151514;
+  margin-right: 30px;
+}
+.about__social svg:hover {
+  fill: #000;
+}
+.about__wrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: url("/img/bg-about.jpg") no-repeat 50%/cover;
+}
+.about__description {
+  padding: 0 100px;
 }
 
 @media (max-width: 1200px) {

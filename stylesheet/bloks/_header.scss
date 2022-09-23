@@ -42,8 +42,11 @@
     padding: 12px 20px;
     transition: all .5s;
   }
-  &__cart:hover {
+  &__cart:hover, &__login:hover {
     background: $hover-color;
+  }
+  &__login {
+    padding: 15px 20px;
   }
 }
 
