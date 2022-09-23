@@ -340,7 +340,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  background: url("/img/bg-about.jpg") no-repeat 50%/cover;
+  background: url("../img/bg-about.jpg") no-repeat 50%/cover;
 }
 .about__description {
   padding: 0 100px;
