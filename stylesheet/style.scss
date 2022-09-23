@@ -26,12 +26,15 @@ body {
 }
 
 .hr {
-  margin-top: 20px;
+  margin: 20px auto 25px auto;
+  width: 100px;
 }
 
 @import "bloks/title";
 @import "bloks/buttons";
 @import "bloks/header";
 @import "bloks/promo";
+@import "bloks/product-catalog";
 @import "bloks/collection";
+@import "bloks/presentation";
 @import "bloks/media";
