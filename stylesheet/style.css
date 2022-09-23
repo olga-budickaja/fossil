@@ -263,7 +263,7 @@ body {
 
 .brands {
   margin-top: 100px;
-  background: url("/img/brands.jpg") no-repeat 50%/cover;
+  background: url("../img/brands.jpg") no-repeat 50%/cover;
   height: 450px;
 }
 .brands__substrate {
