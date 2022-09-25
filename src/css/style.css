@@ -347,6 +347,48 @@ body {
   padding: 0 100px;
 }
 
+.convert__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.convert__date {
+  margin-top: 10px;
+}
+.convert__rate {
+  margin-top: 80px;
+}
+.convert__rate-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.convert__value {
+  position: relative;
+  margin: 0 40px;
+}
+.convert__input {
+  padding: 10px 0;
+  background: transparent;
+  border: 2px solid #fff;
+  text-align: center;
+}
+.convert__label {
+  position: absolute;
+  padding: 0 10px;
+  top: -11px;
+  left: 20px;
+  background: #151514;
+}
+.convert__input[value] {
+  color: #fff;
+  font-size: 24px;
+}
+.convert__btn {
+  margin-top: 40px;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 960px;

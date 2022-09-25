@@ -1,0 +1,44 @@
+.convert {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  &__date {
+    margin-top: 10px;
+  }
+  &__rate {
+    margin-top: 80px;
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__value {
+    position: relative;
+    margin: 0 40px;
+
+  }
+  &__input {
+    padding: 10px 0;
+    background: transparent;
+    border: 2px solid $text-color;
+    text-align: center;
+  }
+  &__label {
+    position: absolute;
+    padding: 0 10px;
+    top: -11px;
+    left: 20px;
+    background: $bg-color;
+  }
+  &__input[value] {
+    color: $text-color;
+    font-size: 24px;
+  }
+  &__btn {
+    margin-top: 40px;
+  }
+}
