@@ -1,0 +1,47 @@
+.form {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 60px;
+
+  &__input, &__textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $text-color;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+    outline: none;
+    transition: all .3s;
+  }
+
+  &__textarea {
+    padding-bottom: -5px;
+  }
+
+  &__input:focus, &__textarea:focus {
+    border: none;
+    border-bottom: 2px solid $text-color;
+  }
+
+  &__input:focus ~ &__lable,
+  &__textarea:focus ~ &__lable {
+    top: -18px;
+    font-size: 12px;
+  }
+
+  &__group {
+    position: relative;
+  }
+
+  &__lable {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease;
+    z-index: -1;
+  }
+
+  &__btn {
+    margin-top: 30px;
+  }
+}

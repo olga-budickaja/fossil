@@ -429,6 +429,57 @@ body {
   fill: #fff;
 }
 
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  align-items: center;
+}
+.contacts__map iframe {
+  width: 100%;
+  min-height: 600px;
+}
+
+.form {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.form__input, .form__textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  padding-bottom: 10px;
+  margin-bottom: 35px;
+  outline: none;
+  transition: all 0.3s;
+}
+.form__textarea {
+  padding-bottom: -5px;
+}
+.form__input:focus, .form__textarea:focus {
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+.form__input:focus ~ .form__lable, .form__textarea:focus ~ .form__lable {
+  top: -18px;
+  font-size: 12px;
+}
+.form__group {
+  position: relative;
+}
+.form__lable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+.form__btn {
+  margin-top: 30px;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 960px;
