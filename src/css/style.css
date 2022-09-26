@@ -31,6 +31,7 @@ body {
 .title {
   font-family: "Playfair Display", serif;
   font-size: 64px;
+  letter-spacing: 3px;
   text-align: center;
 }
 .title_fsz36 {
@@ -387,6 +388,45 @@ body {
 }
 .convert__btn {
   margin-top: 40px;
+}
+
+.service {
+  padding: 100px 0;
+  text-align: center;
+}
+.service__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin-top: 100px;
+  gap: 20px 60px;
+}
+.service__text {
+  width: 600px;
+  margin: 0 auto;
+}
+.service__item-link {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #fff;
+}
+.service__item-title {
+  margin-top: 60px;
+}
+.service__item-text {
+  font-size: 14px;
+}
+.service__item svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: auto;
+  fill: #fff;
 }
 
 @media (max-width: 1200px) {
