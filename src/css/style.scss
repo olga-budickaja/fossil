@@ -25,6 +25,17 @@ body {
   margin: 0 auto;
 }
 
+* a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .hr {
   margin: 20px auto 25px auto;
   width: 100px;
@@ -44,4 +55,5 @@ body {
 @import "bloks/service";
 @import "bloks/contacts";
 @import "bloks/forms";
+@import "bloks/footer";
 @import "bloks/media";

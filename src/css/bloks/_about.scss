@@ -6,9 +6,6 @@
     align-items: center;
   }
   &__list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
   }
@@ -17,7 +14,7 @@
     svg {
       width: 15px;
       height: 15px;
-      fill: #63593e;
+      fill: $second-color;
     }
     &:nth-child(2) {
       svg {
@@ -28,7 +25,6 @@
   }
   &__link {
     position: relative;
-    text-decoration: none;
     span {
       position: absolute;
       top: 50%;
@@ -43,7 +39,7 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    background: #63593e;
+    background: $second-color;
     height: 100%;
     padding-left: 60px;
     svg {

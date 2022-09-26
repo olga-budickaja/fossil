@@ -10,6 +10,11 @@
     iframe {
       width: 100%;
       min-height: 600px;
+      filter: opacity(0.25);
+      transition: all .5s;
+      &:hover {
+        filter: opacity(1);
+      }
     }
   }
 }
