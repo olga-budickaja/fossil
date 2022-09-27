@@ -55,8 +55,17 @@ body {
   width: 100px;
 }
 
+.mt_100 {
+  margin-top: 100px;
+}
+
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 @import "bloks/title";
 @import "bloks/buttons";
+@import "bloks/hamburger";
 @import "bloks/header";
 @import "bloks/promo";
 @import "bloks/product-catalog";

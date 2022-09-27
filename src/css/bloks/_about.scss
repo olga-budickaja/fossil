@@ -5,17 +5,21 @@
     grid-template-rows: 100px;
     align-items: center;
   }
+
   &__list {
     display: flex;
     justify-content: center;
   }
+
   &__item {
     margin: 0 40px;
+
     svg {
       width: 15px;
       height: 15px;
       fill: $second-color;
     }
+
     &:nth-child(2) {
       svg {
         width: 20px;
@@ -23,18 +27,22 @@
       }
     }
   }
+
   &__link {
     position: relative;
+
     span {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+
       &:nth-child(1) {
         top: 60%;
         left: -20px;
       }
     }
   }
+
   &__social {
     display: flex;
     justify-content: left;
@@ -42,23 +50,31 @@
     background: $second-color;
     height: 100%;
     padding-left: 60px;
+
     svg {
       width: 20px;
       height: 20px;
       fill: $bg-color;
       margin-right: 30px;
+
       &:hover {
         fill: #000;
       }
     }
   }
+
   &__wrapper {
-    display: flex;
+    display: grid;
     align-items: center;
     text-align: center;
+    row-gap: 60px;
     background: url("/img/bg-about.jpg") no-repeat 50%/cover;
-    background: url("../img/bg-about.jpg") no-repeat 50%/cover;
   }
+
+  &__img {
+    width: 100%;
+  }
+
   &__description {
     padding: 0 100px;
   }

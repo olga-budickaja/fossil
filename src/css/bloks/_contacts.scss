@@ -1,9 +1,9 @@
 .contacts {
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     text-align: center;
     align-items: center;
+    row-gap: 60px;
   }
 
   &__map {

@@ -1,5 +1,6 @@
 .form {
-  width: 500px;
+  width: 100%;
+  padding: 0 60px;
   margin: 0 auto;
   margin-top: 60px;
 
@@ -23,12 +24,6 @@
     border-bottom: 2px solid $text-color;
   }
 
-  &__input:focus ~ &__lable,
-  &__textarea:focus ~ &__lable {
-    top: -18px;
-    font-size: 12px;
-  }
-
   &__group {
     position: relative;
   }
@@ -39,6 +34,12 @@
     left: 0;
     transition: all .3s ease;
     z-index: -1;
+  }
+
+  &__input:focus ~ &__lable,
+  &__textarea:focus ~ &__lable {
+    transform: translateY(-15px);
+    font-size: 12px;
   }
 
   &__btn {

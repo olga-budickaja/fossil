@@ -1,9 +1,8 @@
 .collection {
-  padding-top: 100px;
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    row-gap: 60px;
   }
   &__catalog {
     padding: 0 60px;
@@ -36,7 +35,7 @@
   }
   &__items {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
+    gap: 40px 20px;
   }
   &__image {
     position: relative;

@@ -12,6 +12,7 @@
   }
   &__logo {
     width: 104px;
+    cursor: pointer;
   }
   &__img {
     max-width: 100%;
@@ -32,15 +33,22 @@
       background: $hover-color;
     }
   }
+
+  &__order {
+    position: relative;
+    display: flex;
+  }
   &__cart {
     padding: 12px 20px;
     transition: all .5s;
+    cursor: pointer;
   }
   &__cart:hover, &__login:hover {
     background: $hover-color;
   }
   &__login {
     padding: 15px 20px;
+    cursor: pointer;
   }
 }
 

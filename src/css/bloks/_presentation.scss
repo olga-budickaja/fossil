@@ -1,10 +1,8 @@
 .presentation {
-  padding-top: 100px;
   &__wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    column-gap: 60px;
+    gap: 60px;
   }
   &__video {
     max-width: 100%;
