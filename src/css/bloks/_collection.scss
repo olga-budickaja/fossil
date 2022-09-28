@@ -29,6 +29,10 @@
   }
   &__content {
     margin-top: 60px;
+    display: none;
+    &_active {
+      display: block;
+    }
   }
   &__item-image {
     height: 245px;
