@@ -127,8 +127,33 @@ body {
   display: none;
 }
 
-.slider__next {
+.slider {
+  position: relative;
+}
+.slider__next, .slider__prev {
   display: none;
+  position: absolute;
+  padding: 10px;
+  border: 1px solid #fff;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider__next svg, .slider__prev svg {
+  fill: #fff;
+  width: 10px;
+  height: auto;
+}
+.slider__next {
+  left: 20px;
+}
+.slider__next svg {
+  transform: rotate(90deg);
+}
+.slider__prev {
+  right: 20px;
+}
+.slider__prev svg {
+  transform: rotate(-90deg);
 }
 
 .header {
@@ -730,16 +755,20 @@ body {
   .slider {
     margin: 0 auto;
     overflow: hidden;
-    max-width: 80%;
   }
   .slider__img {
     width: 100%;
   }
+  .slider__img:hover {
+    filter: none;
+  }
   .slider__line {
     display: flex;
+    position: relative;
     transition: all 1s ease;
+    left: 0;
   }
-  .slider__next {
+  .slider__next, .slider__prev {
     display: block;
   }
 

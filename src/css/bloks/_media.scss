@@ -97,18 +97,23 @@
   .slider {
     margin: 0 auto;
     overflow: hidden;
-    max-width: 80%;
 
     &__img {
       width: 100%;
+
+      &:hover {
+        filter: none;
+      }
     }
 
     &__line {
       display: flex;
+      position: relative;
       transition: all 1s ease;
+      left: 0;
     }
 
-    &__next {
+    &__next, &__prev {
       display: block;
     }
   }

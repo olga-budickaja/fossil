@@ -29,5 +29,46 @@ tabs.forEach(tab => {
     });
 });
 
+//SLIDER MOBILE
+const itemsSlider = document.querySelectorAll(".slider__item");
+const lineSlider = document.querySelector(".slider__line");
+const imgSlider = document.querySelectorAll(".slider__image")
+let countSlider = 0;
+let widthSlider;
+
+if (document.documentElement.clientWidth < 768) {
+
+    window.addEventListener('resize', init);
+    init();
+
+    document.querySelector(".slider__prev").addEventListener('click', () => {
+        countSlider--;
+        if (countSlider < 0) {
+            countSlider = imgSlider.length -1;
+        }
+        nextSlider();
+    });
+
+    document.querySelector(".slider__next").addEventListener('click', () => {
+        countSlider++;
+        if (countSlider >= imgSlider.length) {
+            countSlider = 0;
+        }
+        nextSlider();
+    });
+}
+
+function init() {
+    widthSlider = document.querySelector(".slider").offsetWidth;
+    lineSlider.style = `width: ${widthSlider * imgSlider.length}px`;
+    imgSlider.forEach(img => {
+        img.style = `width: ${widthSlider}px; height: auto`;
+    });
+    nextSlider();
+}
+
+function nextSlider() {
+    lineSlider.style = `left: -${countSlider * widthSlider}px; width: ${widthSlider * imgSlider.length}px`;
+}
 
 
