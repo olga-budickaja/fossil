@@ -1,4 +1,23 @@
-//MENU MOBILE
+// SHOW BLOCKS
+function watchesBlock(watch) {
+    watch.forEach(change => {
+        if (change.isIntersecting) {
+            change.target.classList.add('showing');
+        }
+    });
+}
+
+let options = {
+    threshold: [0.3]
+};
+let observer = new IntersectionObserver(watchesBlock, options);
+let showBlocks = document.querySelectorAll(".opacities");
+
+for (let block of showBlocks) {
+    observer.observe(block);
+}
+
+// MENU MOBILE
 const menuMobile = document.querySelector(".header__wrapper");
 const hamburger = document.querySelector(".hamburger");
 
@@ -7,7 +26,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle("close");
 });
 
-//SCROLLUP
+// SCROLL UP
 const scrollUp = document.querySelector(".scrollup");
 let body = document.querySelector("body");
 let heightWindow = document.documentElement.clientHeight;

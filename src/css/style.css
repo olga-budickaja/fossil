@@ -46,6 +46,17 @@ body {
   padding: 0;
 }
 
+.opacities {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.showing {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
+}
+
 .hr {
   margin: 20px auto 25px auto;
   width: 100px;
