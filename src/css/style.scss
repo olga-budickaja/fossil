@@ -29,6 +29,7 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   background: $bg-color;
@@ -61,6 +62,30 @@ body {
 
 .col-2 {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.scrollup {
+  position: fixed;
+  right: 10px;
+  bottom: 0;
+  display: inline-block;
+  &__btn {
+    padding: 0;
+  }
+  svg {
+    width: 30px;
+    height: auto;
+    fill: $text-color;
+    transform: rotate(-180deg);
+  }
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 @import "bloks/title";

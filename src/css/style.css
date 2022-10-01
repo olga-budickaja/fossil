@@ -24,6 +24,7 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   background: #151514;
@@ -56,6 +57,30 @@ body {
 
 .col-2 {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.scrollup {
+  position: fixed;
+  right: 10px;
+  bottom: 0;
+  display: inline-block;
+}
+.scrollup__btn {
+  padding: 0;
+}
+.scrollup svg {
+  width: 30px;
+  height: auto;
+  fill: #fff;
+  transform: rotate(-180deg);
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 .title {
