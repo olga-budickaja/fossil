@@ -7,6 +7,35 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle("close");
 });
 
+//SCROLLUP
+const scrollUp = document.querySelector(".scrollup");
+let body = document.querySelector("body");
+let heightWindow = document.documentElement.clientHeight;
+
+console.log(window.scrollHeight);
+
+window.addEventListener('scroll', () => {
+    if (scrollY >= heightWindow) {
+        scrollUp.classList.remove("hidden");
+        scrollUp.classList.add("visible");
+    } else {
+        scrollUp.classList.remove("visible");
+        scrollUp.classList.add("hidden");
+    }
+});
+
+
+
+
+scrollUp.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+
+
 //TABS
 const tabs = document.querySelectorAll(".collection__tab");
 const contentsTab = document.querySelectorAll(".collection__content");
@@ -70,5 +99,6 @@ function init() {
 function nextSlider() {
     lineSlider.style = `left: -${countSlider * widthSlider}px; width: ${widthSlider * imgSlider.length}px`;
 }
+
 
 
